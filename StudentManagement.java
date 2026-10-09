@@ -26,14 +26,11 @@ public class StudentManagement {
                 student.setName(name); 
                 student.setAge(age);
                 student.setGrade(grade);
-                break;
+                return;
             }
-            //if not, print the message
-            else {
-            	System.out.print("Students not found");
         }
-    }
-		
+		//no student with this ID was found
+		System.out.println("Student not found");
 	}
 	//static getStudentDetails method with parameters to view students' information
 	public static Student getStudentDetails(int studentId) {
